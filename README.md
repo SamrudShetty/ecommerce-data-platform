@@ -89,7 +89,7 @@ Implemented a **Star Schema**:
 
 ## 🖼️ Dashboard Preview
 
-(Add screenshot here)
+![Dashboard](Images/Dashboard.jpg)
 
 ---
 
