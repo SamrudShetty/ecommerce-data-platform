@@ -79,7 +79,7 @@ Implemented a **Star Schema**:
 ## 📊 Dashboard
 
 ### Key Insights:
-- São Paulo contributes ~40% of total revenue
+- Sao Paulo contributes ~40% of total revenue
 - Revenue is concentrated in top product categories
 - Average Order Value (~205) indicates mid-range purchasing
 - Repeat Rate (~12%) highlights low customer retention
