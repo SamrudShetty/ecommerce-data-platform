@@ -32,7 +32,7 @@ Power BI Dashboard
 
 ## 🖼️ Architecture Diagram
 
-![Architecture](Images/architecture.png)
+![Architecture](Images/architecture.jpg)
 
 ---
 
