@@ -4,7 +4,7 @@
 
 This project demonstrates a **production-style end-to-end data pipeline** that transforms raw e-commerce data into actionable business insights.
 
-It simulates a real-world data engineering workflow, covering:
+It simulates a real-world **data engineering workflow**, covering:
 
 * Data ingestion from raw CSV files
 * Data transformation using Python & SQL
@@ -30,6 +30,12 @@ Power BI Dashboard
 
 ---
 
+## 🖼️ Architecture Diagram
+
+![Architecture](Images/architecture.png)
+
+---
+
 ## ⚙️ Tech Stack
 
 * **Python** (Pandas, SQLAlchemy)
@@ -52,6 +58,7 @@ ecommerce-data-platform/
 ├── sql/                 # Data warehouse SQL scripts
 ├── dashboard/           # Power BI dashboard
 ├── data/                # Raw data (excluded from GitHub)
+├── Images/              # Screenshots & architecture diagram
 ├── docker-compose.yml   # Airflow container setup
 ├── requirements.txt
 └── README.md
@@ -68,7 +75,7 @@ The ETL pipeline:
 * Loads data into PostgreSQL tables
 * Supports **incremental data loading**
 
-Run locally:
+### Run locally:
 
 ```
 python scripts/etl_pipeline.py
@@ -87,22 +94,56 @@ This project uses **Apache Airflow** to automate and monitor the ETL pipeline.
 * Dockerized environment for reproducibility
 * DAG-based workflow management
 
-### Run Airflow:
+---
+
+### ▶️ Start Airflow:
 
 ```
 docker-compose up
 ```
 
-### Access UI:
+---
+
+### 🌐 Access Airflow UI:
 
 ```
 http://localhost:8080
 ```
 
-### Login:
+---
+
+### 🔐 Login:
 
 * Username: `admin`
 * Password: `admin`
+
+---
+
+## ▶️ Run End-to-End Pipeline
+
+1. Start Airflow:
+
+```
+docker-compose up
+```
+
+2. Open Airflow UI:
+
+```
+http://localhost:8080
+```
+
+3. Enable DAG:
+
+```
+ecommerce_pipeline
+```
+
+4. Trigger DAG manually (▶ button)
+
+5. Verify data in PostgreSQL
+
+6. Open Power BI dashboard
 
 ---
 
@@ -110,11 +151,11 @@ http://localhost:8080
 
 Implemented a **Star Schema** for efficient analytics:
 
-### Fact Table:
+### ⭐ Fact Table:
 
 * `fact_sales`
 
-### Dimension Tables:
+### 📦 Dimension Tables:
 
 * `dim_customers`
 * `dim_products`
@@ -125,12 +166,11 @@ Implemented a **Star Schema** for efficient analytics:
 
 ### Key Insights:
 
-* Sao Paulo contributes ~40% of total revenue
+* São Paulo contributes ~40% of total revenue
 * Revenue is concentrated in top product categories
 * Average Order Value (~205) indicates mid-range purchasing
 * Repeat Rate (~12%) highlights low customer retention
 * Profit margin (~30%) shows healthy profitability
-
 
 ---
 
@@ -152,6 +192,8 @@ DB_PASSWORD=your_password
 
 ## 📦 Installation
 
+Install dependencies:
+
 ```
 pip install -r requirements.txt
 ```
@@ -161,6 +203,7 @@ pip install -r requirements.txt
 ## 📌 Dataset
 
 Dataset sourced from:
+
 **Brazilian E-Commerce Public Dataset (Olist)** – Kaggle
 
 ---
@@ -177,5 +220,16 @@ Dataset sourced from:
 ---
 
 ## 👤 Author
+
 **Samrud Shetty**
 
+---
+
+## 💡 Future Improvements
+
+* Migrate pipeline to AWS (S3 + Redshift)
+* Add real-time streaming (Kafka / APIs)
+* Implement CI/CD for pipeline deployment
+* Improve dashboard storytelling & KPIs
+
+---
