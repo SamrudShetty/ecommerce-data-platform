@@ -1,5 +1,7 @@
 # 📊 E-Commerce Data Platform
 
+🚀 Built a production-style data pipeline with orchestration, incremental loading, and containerized deployment.
+
 ## 🚀 Project Overview
 
 This project demonstrates a **production-style end-to-end data pipeline** that transforms raw e-commerce data into actionable business insights.
@@ -233,3 +235,5 @@ Dataset sourced from:
 * Improve dashboard storytelling & KPIs
 
 ---
+
+⭐ If you like this project, consider giving it a star!
