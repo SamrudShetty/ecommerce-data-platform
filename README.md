@@ -177,9 +177,5 @@ Dataset sourced from:
 ---
 
 ## 👤 Author
-<<<<<<< HEAD
-Samrud Shetty
-=======
-
 **Samrud Shetty**
->>>>>>> d3bfc71 (Improved README with Airflow and Docker orchestration)
+
